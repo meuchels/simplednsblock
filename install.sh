@@ -74,6 +74,7 @@ server=127.0.0.1#5353
 no-hosts
 addn-hosts=/etc/dnsmasq/hosts.blocklist
 addn-hosts=/etc/dnsmasq/hosts.custom
+log-queries
 EOF
 
 echo "Downloading and processing the StevenBlack hosts file..."
