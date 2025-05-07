@@ -70,6 +70,8 @@ echo "Configuring dnsmasq to use Unbound as an upstream DNS server..."
 DNSMASQ_CONF="/etc/dnsmasq.d/custom.conf"
 
 tee "$DNSMASQ_CONF" > /dev/null <<EOF
+# Make sure eth0 is your interface name
+interface=eth0
 server=127.0.0.1#5353
 no-hosts
 addn-hosts=/etc/dnsmasq/hosts.blocklist
